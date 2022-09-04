@@ -17,14 +17,21 @@
 <body>
     <h1>Primeiro teste Js</h1>
 
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illum ex provident magnam expedita ipsam, excepturi ad quo ab optio natus quae nesciunt! Dolor, molestias enim voluptates illo nulla ad?</P>
-    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ab tempore assumenda voluptate suscipit nulla doloremque qui, et quo odio illo beatae quod, numquam, labore facilis cupiditate animi nihil ipsum!</P>
-    <form action="">
-     <input type="text" name="nome" id="inome">  
-    </form>
+     <input type="number" id="inum">  +
+     <input type="number" id="inum2"> 
+     <input type="button" value="resultado" onclick="somar()">
+     <div id="rest">Resultado</div>
+    
 </body>
 <script>
-var parag = document.getElementsByTagName('p')[0]
-document.write(parag.innerText)
+    function somar(){
+var numero1= document.getElementById('inum')
+var numero2= document.getElementById('inum2')
+var rest= document.getElementById('rest')
+var n1 = Number(inum.value)
+var n2 = Number(inum2.value)
+var resultado= n1 + n1
+rest.innerHTML =`A soma de ${resultado}`
+}
 </script>
 </html>
