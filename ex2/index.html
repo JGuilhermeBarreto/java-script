@@ -4,33 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    lin
+    
     <title>ex2</title>
 </head>
+
 <style>
 
     *{
         margin: 0px;
         padding: 0px;
+        box-sizing: border-box;
     }
-    h1{
-    text-align: center;
-    color: white;
-    margin-bottom: 0px;
-    margin-top: 40px; 
-    }
+
     html body{
     height: 100vh;
     width: 100vw;
     background-color: gray;
 }
-
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
 section{
-     position: absolute;
+    position: absolute;
     display: block;
-    margin: auto;
+
     height: 400px;
-    width: 500px;
+    width: 450px;
+    transition: width .3s, height .3s;
     background-color: white;
     top:50%;
     left: 50%;
@@ -39,13 +41,20 @@ section{
     box-shadow: 1px 1px 4px rgb(29, 29, 29);
     
 }
+h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 40px; 
+    }
 section div#msg{
    
     text-align: center;
     margin-top: 50px;
+    font-size: 30px;
 }
-section div#imagem{
-    background-color: black ;
+section div#foto img#imagem{
+
     display: block;
     width: 200px;
     height: 200px;
@@ -56,15 +65,13 @@ section div#imagem{
 }
 
 </style>
-<body>
+<body  onload="carregar()">
     <main>
         <h1>Hora do dia</h1>
     <section>
-        <div id="msg"> aqui vai a mensage</div>
-    <div id="imagem">
-
-    
-    </div>
+         <div id="msg"> aqui vai a mensage</div>
+         <div id="foto">
+        <img id="imagem" src="imagem/amanhecer.jpg" alt="manhã"></div>
     </section>
 </main>
 </body>
