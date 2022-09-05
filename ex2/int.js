@@ -16,8 +16,7 @@ img.src = 'imagem/tarde.jpg'
 document.body.style.backgroundColor= "#577a98"
 }else{
 msg.innerHTML=`Agora e de Noite ${horas} Horas` 
-img.src = 'imagem/noite.jpg'
-document.body.style.backgroundColor= "#2c3547"
+img.src.style = 'imagem/noite.jpg'
 }
 }
 
