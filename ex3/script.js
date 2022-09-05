@@ -14,7 +14,7 @@ function verificar(){
         
         if(fsex[0].checked){
             genero = 'Masculino'
-            result.innerHTML=`Você é do Sexo ${genero} de idade  ${idade} Anos`
+            result.innerHTML=`Você é do Sexo ${genero} de Idade  ${idade} Anos`
             if(idade > 0 && idade <= 10){
              img.src = 'imagem/criançaM.jpg';
             }else if(idade < 18){
@@ -36,7 +36,7 @@ function verificar(){
                    img.src='imagem/idosa.jpg'
                }
             genero='Feminino'    
-            result.innerHTML=`Você é do Sexo ${genero} de idade  ${idade} Anos` 
+            result.innerHTML=`Você é do Sexo ${genero} de Idade  ${idade} Anos` 
     }
 
     
