@@ -33,7 +33,7 @@ function verificar(){
                }else if(idade <50){
                    img.src= 'imagem/adulta.jpg'
                }else{
-                   img.src='imagem/idosa.jpg'
+                   img.src='imagem/idosa.png'
                }
             genero='Feminino'    
             result.innerHTML=`Você é do Sexo ${genero} de Idade  ${idade} Anos` 
