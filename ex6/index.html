@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
-    <title>testando tabuada</title>
+    <title>testando Numeros</title>
 </head>
 <body>
 <header>
-<h1>Tabuada</h1>
+<h1>Analisador de Numeros</h1>
 </header>
 <main>
     <section>
         <div>
         <p>
-            <label for="inum">Numero: </label>
-            <input type="number" id="num">
-        <input type="button" value="Gerar" onclick="calcular()"></p>
+           Numero de (1 a 100):
+            <input type="number" id="inum">
+            <input type="button" value="Adicionar" onclick="gerador()"></p>
         </div>
         <div>
-            <select name="tabuada" id="itabuada" size="10">
-            <option>Digite um numero acima</option>
-        </select>
+        <select name="lista" id="ilista" size="10"></select>
+        
+        <br><input type="button" value="Finalizar" onclick="informacao()">
+        </div>
+        <div id="rest">
+            
         </div>
     </section>
 </main>

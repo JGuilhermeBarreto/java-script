@@ -20,7 +20,7 @@ main{
 }
 section{
     height: auto;
-    width: 400px;
+    width: 450px;
     background-color: white;
     border-radius: 10px;
     margin: auto;
@@ -30,4 +30,7 @@ p{
 }
 div{
 padding: 10px;
+}
+select#ilista{
+    margin-bottom: 10px;
 }

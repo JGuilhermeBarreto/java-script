@@ -8,7 +8,7 @@ function calcular(){
  }else{
     let n = Number(num.value)
     let c = 1
-    
+    tab.innerHTML=""
     while(c <= 10 ){
       let item = document.createElement('option')
       let mul = c * n
